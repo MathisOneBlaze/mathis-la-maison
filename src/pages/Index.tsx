@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import mathisPortrait from "@/assets/mathis-oneblaze-portrait.jpg";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -39,32 +41,54 @@ const Index = () => {
       <section className="pt-32 pb-24 px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="fade-in opacity-0 translate-y-8 transition-smooth duration-700">
-            <h1 className="text-6xl md:text-7xl font-light mb-6 tracking-tight text-balance">
-              Mathis OneBlaze
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light mb-16 tracking-wide">
-              Auteur-compositeur-interprète, ingénieur du son, producteur, pédagogue, fondateur du label{" "}
-              <span className="text-evergreen">EVRGRN</span>.
-            </p>
+            <div className="flex items-center gap-8 mb-12">
+              <Avatar className="h-32 w-32 border-2 border-evergreen">
+                <AvatarImage src={mathisPortrait} alt="Mathis OneBlaze" />
+                <AvatarFallback>MO</AvatarFallback>
+              </Avatar>
+              <div>
+                <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight text-evergreen">
+                  MATHIS ONEBLAZE
+                </h1>
+                <ul className="space-y-1 text-base text-muted-foreground">
+                  <li>• Auteur</li>
+                  <li>• Compositeur</li>
+                  <li>• Interprète</li>
+                  <li>• Ingénieur du son</li>
+                  <li>• Producteur</li>
+                  <li>• Pédagogue</li>
+                  <li>• Entrepreneur</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="fade-in opacity-0 translate-y-8 transition-smooth duration-700 delay-200 space-y-6 text-lg leading-relaxed text-foreground/90">
             <p>
-              Professionnel de l'art musicale et des industries sonores depuis plus de 10 ans.
+              Professionnel de l'art, de la musique et des industries sonores depuis plus de 15 ans. 
+              Plus d'une dizaine d'albums publiés sur Spotify, Apple Music, etc. Pionnier des battles 
+              de rap en créole. Diplômé de l'Institut National de l'Audiovisuel. Créateur d'entreprises.
             </p>
             <p>
               Travail transversal : création artistique, sound design, songwriting, direction artistique, 
               ingénierie son studio et live, show design, formation & transmission.
             </p>
             <p>
-              Vision centrale : produire des œuvres, des artistes et des outils mentaux durables, 
-              scalables, et capables de générer des ressources dans le temps.
+              Depuis l'enfance, je crée. Mais j'ai compris très tôt que l'art devait aussi devenir une 
+              arme d'émancipation. J'ai donc transformé mon savoir-faire musical en service : ingénierie 
+              son, coaching, production, conseil. J'ai exploré l'auto-entreprise, j'ai cofondé une société 
+              de production, créé mon label, monté ma propre structure, développé la pédagogie auprès 
+              d'associations, puis obtenu un diplôme technique pour que mes compétences soient mon levier 
+              d'indépendance. Aujourd'hui, je restructure cette vision dans une stratégie hybride : ateliers, 
+              missions courtes, projets artistiques, production, propriété intellectuelle, scale progressif. 
+              Les idées ne manquent pas — il faut juste poser les premières briques et stabiliser la base 
+              pour que tout puisse se déployer.
             </p>
           </div>
 
           <div className="fade-in opacity-0 translate-y-8 transition-smooth duration-700 delay-300 mt-16 p-8 border-l-2 border-evergreen">
-            <p className="text-xl font-light italic text-balance">
-              La création n'est pas éphémère — elle s'investit.
+            <p className="text-lg font-light italic text-balance text-muted-foreground">
+              Evergreen : plante persistante qui conserve ses feuilles vertes toute l'année.
             </p>
           </div>
         </div>
@@ -94,15 +118,12 @@ const Index = () => {
                     LE TROUSSEAU
                   </h3>
                   <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                    Programme pédagogique d'empowerment créatif, organisation mentale, 
-                    méthodologies opérationnelles et scaling artistique.
-                  </p>
-                  <p className="text-base text-foreground/80 mb-3 leading-relaxed">
-                    <span className="font-medium">Objectif :</span> autonomiser, structurer et élever 
-                    durablement le niveau des créateurs.
+                    Association qui a pour but d'amener à la professionnalisation par la pratique 
+                    d'une discipline artistique ou d'un métier satellite opérant autour des métiers de l'art.
                   </p>
                   <p className="text-base text-foreground/80 leading-relaxed">
-                    <span className="font-medium">Roadmap :</span> déploiement capsules / ateliers / contenu récurrent.
+                    <span className="font-medium">Objectif :</span> professionnaliser, autonomiser, structurer, 
+                    élever durablement le niveau des talents, notamment en milieu urbain.
                   </p>
                 </div>
               </div>
@@ -117,11 +138,10 @@ const Index = () => {
                     EVRGRN <span className="text-muted-foreground font-light">(Label)</span>
                   </h3>
                   <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                    Label nourri par Le Trousseau, basé sur l'idée "chaque création génère des ressources".
+                    Label de musique amené à interagir avec le reste de l'écosystème, notamment Le Trousseau.
                   </p>
                   <p className="text-base text-foreground/80 leading-relaxed">
-                    <span className="font-medium">Rôle :</span> production, incubation, DA long-terme, 
-                    structuration d'écosystèmes créatifs rentables.
+                    <span className="font-medium">Rôles :</span> production, incubation, direction artistique.
                   </p>
                 </div>
               </div>
@@ -148,11 +168,11 @@ const Index = () => {
           <div className="fade-in opacity-0 translate-y-8 transition-smooth duration-700 delay-100">
             <ul className="space-y-6 mb-20">
               {[
-                "Production & releases artistiques régulières",
-                "Déploiement public du Trousseau (capsules, masterclass, ateliers)",
-                "Structuration progressive des revenus artistiques",
-                "Développement de partenariats culturels et éducation créative",
-                "Industrialisation créative EVRGRN sur le long terme"
+                "Grand déploiement public du Trousseau",
+                "Développement de partenariats culturels (associations + collectivités)",
+                "Production & réalisation artistique régulière",
+                "Fluctuation progressive des revenus artistiques",
+                "Industrialisation créative sur le long terme"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4 text-lg">
                   <span className="text-evergreen mt-1.5">—</span>
