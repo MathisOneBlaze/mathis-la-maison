@@ -30,9 +30,8 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-medium tracking-wider">EVRGRN</span>
-            <span className="text-xs text-muted-foreground tracking-wider">MATHIS ONEBLAZE</span>
+          <div className="flex items-center justify-center">
+            <span className="text-sm font-medium tracking-wider">Qui est Mathis ?</span>
           </div>
         </div>
       </header>
