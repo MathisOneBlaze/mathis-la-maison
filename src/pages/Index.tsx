@@ -41,13 +41,13 @@ const Index = () => {
       <section className="pt-32 pb-24 px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="fade-in opacity-0 translate-y-8 transition-smooth duration-700">
-            <div className="flex items-center gap-8 mb-12">
-              <Avatar className="h-32 w-32 border-2 border-evergreen">
-                <AvatarImage src={mathisPortrait} alt="Mathis OneBlaze" />
+            <div className="flex items-start gap-8 mb-12">
+              <Avatar className="h-32 w-32 flex-shrink-0 border-2 border-evergreen rounded-lg">
+                <AvatarImage src={mathisPortrait} alt="Mathis OneBlaze" className="object-cover" />
                 <AvatarFallback>MO</AvatarFallback>
               </Avatar>
-              <div>
-                <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight text-evergreen">
+              <div className="flex-1">
+                <h1 className="text-5xl md:text-6xl font-bold mb-8 tracking-tight text-evergreen">
                   MATHIS ONEBLAZE
                 </h1>
                 <ul className="space-y-1 text-base text-muted-foreground">
@@ -69,10 +69,14 @@ const Index = () => {
               Plus d'une dizaine d'albums publiés sur Spotify, Apple Music, etc. Pionnier des battles 
               de rap en créole. Diplômé de l'Institut National de l'Audiovisuel. Créateur d'entreprises.
             </p>
-            <p>
-              Travail transversal : création artistique, sound design, songwriting, direction artistique, 
-              ingénierie son studio et live, show design, formation & transmission.
-            </p>
+            
+            <div className="p-6 border-2 border-evergreen/20 bg-evergreen/5 rounded-lg">
+              <p className="font-medium">
+                Travail transversal : création artistique, sound design, songwriting, direction artistique, 
+                ingénierie son studio et live, show design, formation & transmission.
+              </p>
+            </div>
+
             <p>
               Depuis l'enfance, je crée. Mais j'ai compris très tôt que l'art devait aussi devenir une 
               arme d'émancipation. J'ai donc transformé mon savoir-faire musical en service : ingénierie 
