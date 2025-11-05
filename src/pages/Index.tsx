@@ -173,6 +173,10 @@ const Index = () => {
                     ou d'un métier satellite opérant autour des métiers de l'art. Objectif : professionnaliser, 
                     autonomiser, structurer et élever durablement le niveau des talents, notamment en milieu urbain.
                   </p>
+                  <p className="text-base text-foreground/90 leading-relaxed">
+                    <span className="font-medium">Le Trousseau</span> <span className="italic text-muted-foreground">(Un livre de clés, pour déverrouiller ton génie.)</span> est d'abord le titre d'un livre que j'ai écrit, synthèse de quinze années de recherche personnelle, d'expérimentation artistique et d'ingénierie mentale appliquée à la création. 
+                    Ce livre formalise ma théorie centrale et la philosophie de transmission qui en découle. L'association du même nom s'inscrit dans sa continuité : faire exister cette théorie dans le réel, par la pratique, la pédagogie active, la professionnalisation concrète et l'outillage opérationnel des créateurs. Puisque la transmission est le point de départ, autant la pousser jusqu'au bout.
+                  </p>
                 </div>
               </div>
             </div>
