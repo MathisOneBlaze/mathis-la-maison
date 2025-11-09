@@ -304,7 +304,7 @@ const Index = () => {
               <div className="flex flex-col items-center gap-4 mb-6">
                 <img src={evrgrnLogo} alt="EVRGRN Label" className="w-24 h-24 md:w-32 md:h-32" />
                 <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
-                  <a href="https://evrgrn.asso-letrousseau.com" target="_blank" rel="noopener noreferrer" className="hover:text-evergreen transition-colors">
+                  <a href="https://evrgrn.mathisoneblaze.com" target="_blank" rel="noopener noreferrer" className="hover:text-evergreen transition-colors">
                     <span className="underline underline-offset-4">EVRGRN</span> <span className="text-muted-foreground font-light">(Label)</span>
                   </a>
                 </h3>
